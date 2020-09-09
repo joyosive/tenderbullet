@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-TenderBullet - Blockchain powered Procurement System
-=====================================================
+First GBC Class
+===============
 
 .. toctree::
    :maxdepth: 2
