@@ -5,7 +5,7 @@ Tenderbullet
 My Profile
 ++++++++++
 
-    .. raw:: html
+.. raw:: html
 
     <embed>
         <a href="https://drive.google.com/file/d/1-7he27fEwTWLESA6XuQZA2HLQTb7xs4Y/view?usp=sharing" target="_blank"> Profile </a>
