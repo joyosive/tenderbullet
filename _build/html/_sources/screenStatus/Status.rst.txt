@@ -10,7 +10,7 @@ My Profile
 Tenderbullet Description
 ++++++++++++++++++++++++
 
-:download:`Tenderbullet Description <file/gbc-tenderbullet.pdf>`
+:download:`Tenderbullet : Blockchain powered Procurement System <file/gbc-tenderbullet.pdf>`
 
 
 Architecture Diagram
