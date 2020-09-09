@@ -1,16 +1,16 @@
-Tenderbullet
-============
+First GBC Class
+===============
 
 
 My Profile
 ++++++++++
 
-    :download: 'file/joy-profile.pdf'
+:download:`My Profile <file/joy-profile.pdf>`
 
 Tenderbullet Description
 ++++++++++++++++++++++++
 
-    :download: `file/gbc-tenderbullet.pdf`
+:download:`Tenderbullet Description <file/gbc-tenderbullet.pdf>`
 
 
 Architecture Diagram
