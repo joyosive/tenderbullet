@@ -5,20 +5,12 @@ Tenderbullet
 My Profile
 ++++++++++
 
-.. raw:: html
-
-    <embed>
-        <a href="https://drive.google.com/file/d/1-7he27fEwTWLESA6XuQZA2HLQTb7xs4Y/view?usp=sharing" target="_blank"> Profile </a>
-    </embed>
+    :download: 'file/joy-profile.pdf'
 
 Tenderbullet Description
 ++++++++++++++++++++++++
 
-.. raw:: html
-
-    <embed>
-        <a href="https://drive.google.com/file/d/1rsCah5NgMIfexF_NiYofE5Pl7foR6WBi/view?usp=sharing" target="_blank"> Description </a>
-    </embed>
+    :download: `file/gbc-tenderbullet.pdf`
 
 
 Architecture Diagram
