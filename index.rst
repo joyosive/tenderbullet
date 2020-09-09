@@ -10,7 +10,7 @@ TenderBullet - Blockchain powered Procurement System
    :maxdepth: 2
    :caption: Contents:
 
-    Status of Tender Bullet <./screenStatus/Status.rst>
+    Table of Contents <./screenStatus/Status.rst>
 
 
 
