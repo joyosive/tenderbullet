@@ -35,8 +35,24 @@ FAQs
 
       Yes, bidding value and date
 
+8.   **What is the existing organizational structure? And what behavioral patterns to users have today? How does this product or service fit into their existing workflow?**
+
+     Current structure is opaque and preferism is followed.
+
+9.   **Are there any behavioral or organizational changes necessary to implement this use case?**
+
+     Blockchain cell needs to be introduced.
+
+     .. image:: images/cell.png
 
 
+10.  **Who needs to run a node? Who has read access? Who has write access?**
+
+     Each organization and tenderbullet +  auditor(kpmg+pwc) will be nodes. And specific peers within the org will have specific access.
 
 
+11.  **What are the data storage requirements regarding archiving and regulation?**
+
+     Data storage will be met by geo distributed crdt based object storage derived from customized version of minio.
+     All inter communication will happen via VPN to tenderbullet
 
