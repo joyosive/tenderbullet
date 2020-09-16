@@ -3,14 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-First GBC Class
-===============
+BCDV 1001
+=========
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-    Table of Contents <./screenStatus/Status.rst>
+    Team Members Profile <./profile/profile.rst>
+    BCDV 1001 Lab1 <./lab1/lab1.rst>
+    FAQs <./FAQs/faqs.rst>
 
 
 

@@ -1,0 +1,439 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>BCDV 1001 - Lab Exercise1 &mdash; TenderBullet-Consolidated  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Our Profile" href="../profile/profile.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> TenderBullet-Consolidated
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../profile/profile.html"> Team Members Profile</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"> BCDV 1001 Lab1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tenderbullet-description">Tenderbullet Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stakeholders-roles">Stakeholders &amp; Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#architecture-diagram">Architecture Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#use-cases">Use Cases</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tender-creator">Tender Creator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tender-manager">Tender Manager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bidder">Bidder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bid-evaluation-committe">Bid Evaluation Committe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bid-evaluation-chairperson">Bid Evaluation Chairperson</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cvo">CVO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usecases-table">UseCases Table</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#kafka-topics">Kafka Topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transactions">Transactions</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">TenderBullet-Consolidated</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>BCDV 1001 - Lab Exercise1</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/lab1/lab1.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="bcdv-1001-lab-exercise1">
+<h1>BCDV 1001 - Lab Exercise1<a class="headerlink" href="#bcdv-1001-lab-exercise1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="tenderbullet-description">
+<h2>Tenderbullet Description<a class="headerlink" href="#tenderbullet-description" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference download internal" download="" href="../_downloads/9788521d83c4bff6d8253dc7754b8af9/gbc-tenderbullet-wip5.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Tenderbullet</span> <span class="pre">:</span> <span class="pre">Blockchain</span> <span class="pre">powered</span> <span class="pre">Procurement</span> <span class="pre">System</span></code></a></p>
+</div>
+<div class="section" id="stakeholders-roles">
+<h2>Stakeholders &amp; Roles<a class="headerlink" href="#stakeholders-roles" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><img alt="../_images/stakeholders.png" src="../_images/stakeholders.png" />
+</div></blockquote>
+</div>
+<div class="section" id="architecture-diagram">
+<h2>Architecture Diagram<a class="headerlink" href="#architecture-diagram" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><img alt="../_images/ArchitectureDiagram.png" src="../_images/ArchitectureDiagram.png" />
+</div></blockquote>
+</div>
+<div class="section" id="use-cases">
+<h2>Use Cases<a class="headerlink" href="#use-cases" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="tender-creator">
+<h3>Tender Creator<a class="headerlink" href="#tender-creator" title="Permalink to this headline">¶</a></h3>
+<img alt="../_images/TenderCreator.png" src="../_images/TenderCreator.png" />
+</div>
+<div class="section" id="tender-manager">
+<h3>Tender Manager<a class="headerlink" href="#tender-manager" title="Permalink to this headline">¶</a></h3>
+<img alt="../_images/tenderManager.png" src="../_images/tenderManager.png" />
+</div>
+<div class="section" id="bidder">
+<h3>Bidder<a class="headerlink" href="#bidder" title="Permalink to this headline">¶</a></h3>
+<img alt="../_images/Bidder.png" src="../_images/Bidder.png" />
+</div>
+<div class="section" id="bid-evaluation-committe">
+<h3>Bid Evaluation Committe<a class="headerlink" href="#bid-evaluation-committe" title="Permalink to this headline">¶</a></h3>
+<img alt="../_images/BidEvalCommitte.png" src="../_images/BidEvalCommitte.png" />
+</div>
+<div class="section" id="bid-evaluation-chairperson">
+<h3>Bid Evaluation Chairperson<a class="headerlink" href="#bid-evaluation-chairperson" title="Permalink to this headline">¶</a></h3>
+<img alt="../_images/BidEvalChairperson.png" src="../_images/BidEvalChairperson.png" />
+</div>
+<div class="section" id="cvo">
+<h3>CVO<a class="headerlink" href="#cvo" title="Permalink to this headline">¶</a></h3>
+<img alt="../_images/CVO.png" src="../_images/CVO.png" />
+</div>
+<div class="section" id="usecases-table">
+<h3>UseCases Table<a class="headerlink" href="#usecases-table" title="Permalink to this headline">¶</a></h3>
+<img alt="../_images/OldUseCases.png" src="../_images/OldUseCases.png" />
+</div>
+</div>
+<div class="section" id="kafka-topics">
+<h2>Kafka Topics<a class="headerlink" href="#kafka-topics" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 25%" />
+<col style="width: 30%" />
+<col style="width: 30%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>SNO</p></th>
+<th class="head"><p>Stakeholders</p></th>
+<th class="head"><p>Producer in Springboot(Events)</p></th>
+<th class="head"><p>Kafka Topic Stream of Records</p></th>
+<th class="head"><p>Consumer</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td rowspan="9"><p>1</p></td>
+<td rowspan="9"><p>Tender Creator</p></td>
+<td></td>
+<td><p>tender-create-new</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>tender-active</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>tender-closed</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>tender-info-documents</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>tender-sent-for-approval</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>tender-draft</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>tender-repulish</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>tender-template-create</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>tender-template-delete</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td colspan="5"></td>
+</tr>
+<tr class="row-even"><td rowspan="5"><p>2</p></td>
+<td rowspan="5"><p>Tender Manager</p></td>
+<td></td>
+<td><p>tender-approve</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>tender-reject</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>tender-pending-review</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>tender-mark-corrigendum</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td colspan="5"></td>
+</tr>
+<tr class="row-even"><td rowspan="7"><p>3</p></td>
+<td rowspan="7"><p>Bidder</p></td>
+<td></td>
+<td><p>bidder-profile-details</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>bid-documents-submit</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>bid-earnest-money-deposit</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>bid-approve</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>bid-reject</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>bid-progress-status</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>bidder-notifications</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td colspan="5"></td>
+</tr>
+<tr class="row-even"><td rowspan="5"><p>4</p></td>
+<td rowspan="5"><p>Bid Evaluation Committee</p></td>
+<td></td>
+<td><p>bid-approved-documents</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>bid-fee-confirmation</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>bid-accepted</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>bid-rejected</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>bid-pending-review</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td colspan="5"></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><p>5</p></td>
+<td rowspan="3"><p>Chief Vigilance Officer</p></td>
+<td></td>
+<td><p>tender-mark-suspicious</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>tender-mark-fraud</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>tender-mark-verified</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="transactions">
+<h2>Transactions<a class="headerlink" href="#transactions" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><img alt="../_images/transactions.png" src="../_images/transactions.png" />
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../profile/profile.html" class="btn btn-neutral float-left" title="Our Profile" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Team Osive
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
