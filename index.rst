@@ -12,7 +12,9 @@ BCDV 1001
 
     Team Members Profile <./profile/profile.rst>
     BCDV 1001 Lab1 <./lab1/lab1.rst>
+    Raptor system open power <./raptor/raptor.rst>
     FAQs <./FAQs/faqs.rst>
+
 
 
 
